@@ -1,19 +1,14 @@
 <template>
-  <div class="chessboard" >
-    <Tile v-for="n in 64" v-bind:key="n" />
+  <div data-indexclass="chessboard_tile">
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
-import Tile from './Tile.vue';
-@Component({
-  components: {
-    Tile,
-  },
-})
-export default class ChessBoard extends Vue {
 
+@Component
+export default class Tile extends Vue {
+  location: string;
 }
 </script>
 

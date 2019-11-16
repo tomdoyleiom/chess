@@ -9,6 +9,7 @@ import { Component, Vue } from 'vue-property-decorator';
 import ChessBoard from './components/ChessBoard.vue';
 @Component({
   components: {
+    ChessBoard,
   },
 })
 export default class App extends Vue {}
